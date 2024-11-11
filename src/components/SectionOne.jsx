@@ -42,6 +42,9 @@ const Wrapper = styled.div`
         }
     img {
         height: 420px;
+        @media (max-width:767px){
+            /* max-width: 20px; */
+        }
         /* border: 1px solid red; */
     }
     @media (max-width:767px){
