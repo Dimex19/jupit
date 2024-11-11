@@ -44,7 +44,7 @@ const Wrapper = styled.div`
         height: 420px;
         @media (max-width:767px){
             /* max-width: 20px; */
-            border: 1px solid red;
+            /* border: 1px solid red; */
             max-width: 380px;
         }
         /* border: 1px solid red; */
@@ -55,14 +55,28 @@ const Wrapper = styled.div`
     }
 `
 const OneText = styled.div`
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 560px;
     padding: 53px 0px;
+    @media (max-width:450px){
+        h2 {
+            font-size: 42px;
+            line-height: 47px;
+            border: 1px solid red;
+        }
+        p {
+            font-size: 18px;
+        }
+    
+    }
     h2 {
         /* border: 1px solid red; */
         font-family: 'MangoGrotesque', sans-serif;
         font-size: 54px;
         line-height: 67.2px;
+        /* @media (max-width: 450px) {
+            border: 1px solid red;
+        } */
     }
     p {
         font-family: 'Montserrat', sans-serif;

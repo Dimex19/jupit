@@ -36,9 +36,11 @@ const Wrapper = styled.div`
 
     @media (max-width:767px){
         padding: 20px 20px;
-    
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid red;
+
     }
-    /* border: 1px solid red; */
 
     @font-face {
         font-family: 'MangoGrotesque';
@@ -53,6 +55,11 @@ const Wrapper = styled.div`
         font-size: 58px;
         text-align: left;
         color: #fff;
+        @media (max-width:450px){
+            font-size: 50px;
+            line-height: 52px;
+            border: 1px solid red;
+        }
     }
     img {
         max-width: 480px;
@@ -68,6 +75,10 @@ const HeroText = styled.div`
     max-width: 530px;
     height: 330px;
     /* border: 1px solid red; */
+    @media (max-width: 450px) {
+        margin-bottom: 0px;
+
+    }
 
     span {
         color: #FFA000;
@@ -77,5 +88,8 @@ const HeroText = styled.div`
         font-size: 19px;
         color: #fff;
 
+        @media (max-width: 450px) {
+            font-size: 16px;
+        }
     }
 `
