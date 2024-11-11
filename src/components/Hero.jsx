@@ -34,14 +34,25 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width) {
+        padding: 20px ;
+    }    
     @media (max-width:767px){
-        background-size: 100% 90%;
+        /* background-size: 100% 100%; */
         background-color: #161676;
         padding: 20px 20px;
         flex-direction: column;
         justify-content: flex-start;
-        /* border: 1px solid red; */
+        text-align: center;
 
+    }
+    @media (max-width: 985px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+        gap: 10px;
+        height: auto;
     }
 
     @font-face {
@@ -62,25 +73,60 @@ const Wrapper = styled.div`
             line-height: 52px;
             /* border: 1px solid red; */
         }
+        @media (max-width: 767px) {
+            /* border: 1px solid red; */
+            max-width: 600px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        @media (max-width: 1230px) {
+            font-size: 52px;
+            
+        }
+        
+
+
     }
     img {
         max-width: 480px;
-        /* max-height: 300px; */
-        /* border: 1px solid red; */
+       
         @media (max-width:767px){
-        max-width: 380px;
-    
-    }
+            max-width: 380px;
+        }
+        @media (max-width: 1230px) {
+            max-width: 380px;
+        }
+        @media (max-width: 985px) {
+            max-width: 320px;
+            /* border: 1px solid red; */
+        }
+
+
     }
 `
 const HeroText = styled.div`
     max-width: 530px;
-    height: 330px;
+    max-height: 330px;
     /* border: 1px solid red; */
     @media (max-width: 450px) {
         margin-bottom: 0px;
 
     }
+    @media (max-width: 767px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+    @media (max-width: 1230px) {
+        max-width: 480px;
+    }
+    @media (max-width: 1060px) {
+        max-width: 400px;
+    }
+    @media (max-width: 985px) {
+            max-width: 800px;
+        }
 
     span {
         color: #FFA000;
@@ -93,5 +139,9 @@ const HeroText = styled.div`
         @media (max-width: 450px) {
             font-size: 16px;
         }
+        @media (max-width: 1230px) {
+            font-size: 16px;
+        }
+
     }
 `

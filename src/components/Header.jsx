@@ -38,7 +38,7 @@ export default Header
 const Hamburger = styled.div`
     display: none;
 
-    @media (max-width:767px){
+    @media (max-width:850px){
         display: block;
     
     }
@@ -48,10 +48,11 @@ const Wrapper = styled.div`
     padding: 0px 100px;
     color: #fff;
 
-    @media (max-width:767px){
+    @media (max-width:850px){
         padding: 0px 20px;
-    
+        /* border: 1px solid red; */
     }
+    
     /* border: 1px solid red; */
 `
 const Container = styled.div`
@@ -71,6 +72,13 @@ const Container = styled.div`
         padding: 20px 100px 0px 100px;
 
     }
+    @media (max-width: 850px) {
+        padding: 20px 80px 0px 80px;
+        /* border: 1px solid red; */
+    }
+    @media (max-width: 450px) {
+        padding: 20px 10px 0px 10px ;
+    }  
 
     img {
         width: 103px;
@@ -82,11 +90,19 @@ const NavLinks = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    @media (max-width: 850px) {
+        display: none;
+        }
+    
     a {
         margin-left: 60px;
         text-decoration: none;
         color: inherit;
+
+        @media (max-width: 1062px) {
+            margin-left: 20px;
+        }
+        
     }
     #firstLink {
         margin-left: 0px;
@@ -98,6 +114,12 @@ const NavButtons = styled.div`
     margin-left: 70px;
     color: #ffffff;
 
+    @media (max-width: 1062px) {
+        margin-left: 20px;
+    }
+    @media (max-width: 850px) {
+        display: none;
+    }
     #firstBtn {
         margin-right: 30px;
         border: 1px solid red;
