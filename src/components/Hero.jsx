@@ -10,7 +10,7 @@ const Hero = () => {
         <HeroText>
             <h1>EASY AND <span>SEAMLESS</span> CRYPTOCURRENCY TRANSACTIONS</h1>
             <p>A place to buy and sell digital assets in only 120 seconds. Make your digital assets transactions easier anywhere  and anytime</p>
-            <Button text='Get Started' style={{marginTop: '25px', backgroundColor: '#FFA000', border: 'none', width:'169px', height:'40px', borderRadius: '10px'}}/>
+            <Button text='Get Started' style={{marginTop: '25px', backgroundColor: '#FFA000', border: 'none', width:'169px', height:'40px', borderRadius: '10px', color: '#fff'}}/>
 
         </HeroText>
         <img src={HeroImg} alt="" />
@@ -35,10 +35,12 @@ const Wrapper = styled.div`
     align-items: center;
 
     @media (max-width:767px){
+        background-size: 100% 90%;
+        background-color: #161676;
         padding: 20px 20px;
         flex-direction: column;
         justify-content: flex-start;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 
     }
 
@@ -58,7 +60,7 @@ const Wrapper = styled.div`
         @media (max-width:450px){
             font-size: 50px;
             line-height: 52px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
     }
     img {
