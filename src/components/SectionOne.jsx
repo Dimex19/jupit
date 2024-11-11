@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     }
 `
 const OneText = styled.div`
-    /* border: 1px solid red; */
+    border: 1px solid red;
     max-width: 560px;
     padding: 53px 0px;
     h2 {
