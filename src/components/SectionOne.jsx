@@ -44,6 +44,8 @@ const Wrapper = styled.div`
         height: 420px;
         @media (max-width:767px){
             /* max-width: 20px; */
+            border: 1px solid red;
+            max-width: 380px;
         }
         /* border: 1px solid red; */
     }
