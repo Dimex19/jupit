@@ -34,9 +34,6 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width) {
-        padding: 20px ;
-    }    
     @media (max-width:767px){
         /* background-size: 100% 100%; */
         background-color: #161676;
@@ -52,7 +49,7 @@ const Wrapper = styled.div`
         align-items: center;
         /* border: 1px solid red; */
         gap: 10px;
-        height: auto;
+        /* height: auto; */
     }
 
     @font-face {
